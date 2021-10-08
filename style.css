@@ -14,6 +14,10 @@ body{
 .flex{
     display: flex;
 }
+
+#introUn, #introTrois, #fr, #kr, #ch{
+    font-family: 'Roboto', sans-serif;
+}
 /* --------------------------- */
 /* --------HAMBURGER--------- */
 /* ------------------------- */
@@ -140,7 +144,6 @@ body{
 }
 #introUn, #introTrois{
     font-size: 24px;
-    font-family: 'Roboto', sans-serif;
 }
 #introDeux{
     padding: 10%;
@@ -186,7 +189,6 @@ body{
 #fr, #kr, #ch{
     height: 846px;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
 }
 #myBtn, #myBtn1, #myBtn2{
     flex-direction: column;
@@ -198,8 +200,9 @@ body{
     background: none;
     border: none;
 }
-#myBT1{
-    right: 3;
+
+.citationkr{
+    width: 100%;
 }
 .citation{
     font-size: 70px;
