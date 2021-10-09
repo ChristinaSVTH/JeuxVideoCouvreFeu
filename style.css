@@ -14,9 +14,31 @@ body{
 .flex{
     display: flex;
 }
-
+.grid{
+    display: grid;
+}
+    /* font */
+.couvrefeu, .jv{
+    font-family: 'Press Start 2P', cursive;
+}
 #introUn, #introTrois, #fr, #kr, #ch{
     font-family: 'Roboto', sans-serif;
+}
+    /* size */
+.jv{
+    font-size: 100px;
+}
+.couvrefeu, #myBtn, #myBtn1, #myBtn2, .citation{
+    font-size:70px;
+}
+.close, .close1, .close2 {
+    font-size: 50px;
+}
+.liste .readMe{
+    font-size: 30px;
+}
+#introUn, #introTrois{
+    font-size: 24px;
 }
 /* --------------------------- */
 /* --------HAMBURGER--------- */
@@ -58,7 +80,6 @@ body{
 .liste{
    color: #fafafa;
    list-style-type: none;
-   font-size: 30px;
    cursor: pointer;
    padding-left: 20px;
    text-decoration: none;
@@ -99,15 +120,8 @@ body{
 .titre{
     height: 600px;
 }
-.couvrefeu{
-    font-family: 'Press Start 2P', cursive;
-    font-size:70px;
-}
-
     /* JEUX VIDEOS */
 .jv{
-    font-size: 100px;
-    font-family: 'Press Start 2P', cursive;
     position: sticky;  
     top: 1em; 
 }
@@ -141,9 +155,6 @@ body{
 }
 #introTrois{
     padding-bottom: 20%;
-}
-#introUn, #introTrois{
-    font-size: 24px;
 }
 #introDeux{
     padding: 10%;
@@ -196,7 +207,6 @@ body{
     align-items: center;
     color: white;
     padding-left: 15% ;
-    font-size: 70px;
     background: none;
     border: none;
 }
@@ -205,15 +215,9 @@ body{
     width: 100%;
 }
 .citation{
-    font-size: 70px;
     font-style:italic;
    justify-content: center;
    align-items: center;
-}
-
-.readMe{
-
-    font-size: 30px;
 }
 
 .texte{
@@ -250,7 +254,6 @@ body{
 }
 .close, .close1, .close2 {
     float: right;
-    font-size: 50px;
     font-weight: bold;
 }
   
@@ -262,3 +265,15 @@ body{
     cursor: pointer;
 }
 
+/* --------------------------- */
+/* --------CONCLUSION-------- */
+/* ------------------------- */
+
+.pp1 ,.pp2 ,.pp3 ,.pp4 ,.pp5 ,.pp6{
+    border: brown solid 2px;
+}
+#conclusion{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: ". pp1", "pp2 pp3", "pp4 pp5", "pp6 .";
+}
