@@ -10,6 +10,7 @@ body{
     background: #1D1D1D;
     color: white;
     margin:90px 62px 0 186px;
+    font-family: 'Roboto', sans-serif;
 }
 .flex{
     display: flex;
@@ -18,14 +19,11 @@ body{
     display: grid;
 }
     /* font */
-.couvrefeu, .jv{
+.couvrefeu, .jv, #pp, .pptitre{
     font-family: 'Press Start 2P', cursive;
 }
-#introUn, #introTrois, #fr, #kr, #ch{
-    font-family: 'Roboto', sans-serif;
-}
     /* size */
-.jv{
+.jv, #pp{
     font-size: 100px;
 }
 .couvrefeu, #myBtn, #myBtn1, #myBtn2, .citation{
@@ -34,10 +32,13 @@ body{
 .close, .close1, .close2 {
     font-size: 50px;
 }
-.liste .readMe{
+.pptitre{
+    font-size: 36px;
+}
+header, .liste .readMe{
     font-size: 30px;
 }
-#introUn, #introTrois{
+#introUn, #introTrois, .pptexte{
     font-size: 24px;
 }
 /* --------------------------- */
@@ -81,6 +82,7 @@ body{
    color: #fafafa;
    list-style-type: none;
    cursor: pointer;
+   padding-bottom:5% ;
    padding-left: 20px;
    text-decoration: none;
 }
@@ -199,8 +201,10 @@ body{
 
 #fr, #kr, #ch{
     height: 846px;
+    padding-bottom: 15%;    
     justify-content: center;
 }
+
 #myBtn, #myBtn1, #myBtn2{
     flex-direction: column;
     justify-content: center;
@@ -269,11 +273,27 @@ body{
 /* --------CONCLUSION-------- */
 /* ------------------------- */
 
-.pp1 ,.pp2 ,.pp3 ,.pp4 ,.pp5 ,.pp6{
-    border: brown solid 2px;
+#pp{
+    padding: 15%;
+    text-align: center;
 }
+.pp1,.pp2 ,.pp3 ,.pp4 ,.pp5 ,.pp6{
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+}
+
+.pptitre, .pptexte{
+    text-align: center;
+    justify-content: center;
+}
+.ppimage{
+    justify-content: center;
+    padding-left: 30%;
+}
+
 #conclusion{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-area: ". pp1", "pp2 pp3", "pp4 pp5", "pp6 .";
 }
+
