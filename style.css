@@ -162,7 +162,7 @@ header, .liste .readMe{
     text-align: center;
 }
 #introTrois{
-    padding-bottom: 20%;
+    padding-bottom: 25%;
 }
 #introDeux{
     padding: 10%;
@@ -230,8 +230,9 @@ header, .liste .readMe{
 }
 
 .texte{
+    background: rgba(29,29,29, 0.8);
     border: violet 2px solid;
-    width: 672px;
+    width: 100%;
 }
 .modal, .modal1, .modal2{
     display: none;
