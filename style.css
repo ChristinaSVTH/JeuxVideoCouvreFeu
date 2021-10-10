@@ -207,7 +207,6 @@ header, .liste .readMe{
 
 #fr, #kr, #ch{
     height: 846px;
-    padding-bottom: 15%;    
     justify-content: center;
 }
 
@@ -220,11 +219,11 @@ header, .liste .readMe{
     background: none;
     border: none;
 }
-
 .citationkr{
     width: 100%;
 }
 .citation{
+    border-right: white 2px solid;
     font-style:italic;
    justify-content: center;
    align-items: center;
@@ -340,10 +339,8 @@ header, .liste .readMe{
 
 footer{
     font-family: 'Roboto', sans-serif;
-    height: auto;
-    width: 100%;
     gap: 13%;
-    padding: 200px;
+    padding: 150px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "f1 f1 f1" "f2 f3 f4" ". f5 f5";
