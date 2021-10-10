@@ -12,6 +12,7 @@ body{
     margin:90px 62px 0 186px;
     font-family: 'Roboto', sans-serif;
 }
+
 .flex{
     display: flex;
 }
@@ -19,7 +20,7 @@ body{
     display: grid;
 }
     /* font */
-.couvrefeu, .jv, #pp, .pptitre{
+.couvrefeu, .jv, #pp, .pptitre, .footertitre{
     font-family: 'Press Start 2P', cursive;
 }
     /* size */
@@ -32,7 +33,7 @@ body{
 .close, .close1, .close2{
     font-size: 50px;
 }
-.pptitre{
+.pptitre, .readMe{
     font-size: 36px;
 }
 header, .liste .readMe{
@@ -40,6 +41,12 @@ header, .liste .readMe{
 }
 #introUn, #introTrois, .pptexte{
     font-size: 24px;
+}
+.footertitresource, .footertitrereseaux, .footerinfotitre{
+    font-size: 18px;
+}
+.boutoncategorie.CategorieListe, .CategorieListe a , .titreleg{
+    font-size: 14px;
 }
 /* --------------------------- */
 /* --------HAMBURGER--------- */
@@ -134,7 +141,6 @@ header, .liste .readMe{
 }
     /* BARRE QUI CLIGNOTE */
 .blink{
-    color:white;
     animation: blink 1s linear infinite;
 }
   @keyframes blink{  
@@ -287,13 +293,21 @@ header, .liste .readMe{
     justify-content:center;  
 }
 
+.chargement{
 
+        animation: blink 3s linear infinite;
+    }
+      @keyframes chargement{ 
+        0% {opacity: 0;}
+        50% {opacity: 0;} 
+        100% {opacity: 0;}
+    }
 /* --------------------------- */
 /* --------CONCLUSION-------- */
 /* ------------------------- */
 
 #pp{
-    margin-top: 40%;
+    margin-top: 35%;
     padding: 15%;
     text-align: center;
 }
@@ -304,6 +318,7 @@ header, .liste .readMe{
 }
 
 .pptitre, .pptexte{
+    padding: 2%;
     text-align: center;
     justify-content: center;
 }
@@ -315,5 +330,129 @@ header, .liste .readMe{
 #conclusion{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+
+/* --------------------------- */
+/* --------CONCLUSION-------- */
+/* ------------------------- */
+
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    height: auto;
+    width: 100%;
+    gap: 13%;
+    padding: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "f1 f1 f1" "f2 f3 f4" ". f5 f5";
+}
+.footertitre, .footertitresource, .reseaux, .infoleg{
+    justify-content: center;
+}
+.footertitre{
+    grid-area: f1;
+}
+.source{
+    grid-area: f2;
+
+}
+.reseaux{
+    width: 100%;
+    grid-area: f3;
+}
+.footericone{
+    padding-left: 30%;
+}
+.infoleg{
+    grid-area: f4;
+}
+.footerbas{
+    width: 100%;
+    grid-area: f5;
+}
+.footertitresource{
+    padding-bottom: 5%;
+}
+/* --------------------------- */
+/* --------DEROULANT-------- */
+/* ------------------------- */
+
+.Categorie{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.boutoncategorie:hover{
+    width: 100%;
+    background: rgba(236,236,236, 0.5);
+
+}
+.Categorie a {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.CategorieListe {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+}
+.boutoncategorie{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+/*  MENU DEROULANT  */
+
+.dropdownChild {
+    display: none;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    position: sticky;
+    list-style: none;
+}
+.dropdownChild a {
+    text-decoration: none;
+    display: block;
+}
+.CategorieListe:hover .dropdownChild {
+    display: block;
+    width: 100%;
+    background: #1d1d1d;
+}
+.dropdownChild li a:hover {
+    background: rgba(236,236,236, 0.5);
+    color: white;
+}
+
+/* Formulaire */
+
+.formulaire{
+    justify-content: flex-end;
+}
+.footertitreformulaire{
+    padding-right: 2%;
+}
+.formulaire input{
+    width: 134px;
+    height: 18px;
+}
+::placeholder{
+    font-size: 13px;
+    padding-left: 40%;
+
+}
+.formulaire button{
+    height: 18px;
+    width: 58px;
 }
 
