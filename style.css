@@ -33,10 +33,10 @@ body{
 .close, .close1, .close2{
     font-size: 50px;
 }
-.pptitre, .readMe{
+.pptitre, .readMe, .soit{
     font-size: 36px;
 }
-header, .liste .readMe{
+header, .liste{
     font-size: 30px;
 }
 #introUn, #introTrois, .pptexte{
@@ -48,6 +48,13 @@ header, .liste .readMe{
 .boutoncategorie.CategorieListe, .CategorieListe a , .titreleg{
     font-size: 14px;
 }
+
+        /* DISPLAY NONE POUR RESPONSIVE*/
+        .flipreponsive, #myBtnR, #myBtn1R, #myBtn2R{
+            display: none;
+        }
+        
+
 /* --------------------------- */
 /* --------HAMBURGER--------- */
 /* ------------------------- */
@@ -162,10 +169,13 @@ header, .liste .readMe{
     text-align: center;
 }
 #introTrois{
-    padding-bottom: 25%;
+    padding-bottom: 20%;
+}
+#introUn, #introTrois{
+    font-size: 24px;
 }
 #introDeux{
-    padding: 10%;
+    padding: 5%;
     justify-content: center;
 }
 
@@ -206,6 +216,7 @@ header, .liste .readMe{
 /* ------------------------- */
 
 #fr, #kr, #ch{
+    padding-left: 10%;
     height: 846px;
     justify-content: center;
 }
@@ -225,13 +236,14 @@ header, .liste .readMe{
 .citation{
     border-right: white 2px solid;
     font-style:italic;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .texte{
-    background: rgba(29,29,29, 0.8);
-    border: violet 2px solid;
+    text-align: center;
+    background: rgba(29,29,29, 0.7);
     width: 100%;
 }
 .modal, .modal1, .modal2{
@@ -278,8 +290,9 @@ header, .liste .readMe{
 /* ------------------------- */
 
 #transition{
+
     flex-direction: column;
-    height: 1050px;
+    height: 1100px;
 }
 .transi{
     flex-direction: column;
@@ -350,6 +363,7 @@ footer{
     justify-content: center;
 }
 .footertitre{
+    padding-bottom: 5%;
     grid-area: f1;
 }
 .source{
@@ -367,6 +381,7 @@ footer{
     grid-area: f4;
 }
 .footerbas{
+
     width: 100%;
     grid-area: f5;
 }
@@ -374,7 +389,7 @@ footer{
     padding-bottom: 5%;
 }
 /* --------------------------- */
-/* --------DEROULANT-------- */
+/* --------DEROULANT--------- */
 /* ------------------------- */
 
 .Categorie{
@@ -436,6 +451,7 @@ footer{
 
 .formulaire{
     justify-content: flex-end;
+    width: 100%;
 }
 .footertitreformulaire{
     padding-right: 2%;
@@ -454,3 +470,70 @@ footer{
     width: 58px;
 }
 
+
+
+/* --------------------------- */
+/* -----RESPONSIVE LVL1------ */
+/* ------------------------- */
+
+
+@media(max-width:1322px){
+*{
+    margin: 0;
+}
+.jv, #pp{
+    font-size: 60px;
+}
+
+.couvrefeu, #myBtn, #myBtn1, #myBtn2,  .txttransi{
+    font-size:50px;
+}
+.citation{
+    font-size: 35px;
+}
+.pptitre{
+    font-size: 30px;
+}
+
+.pptexte, .readMe{
+    font-size: 20px;
+}
+
+.flip-box{  
+    display: none;
+}
+
+.flipreponsive{
+    display: block;
+    width: 100%;
+}
+
+.imageresponsive{
+    display: flex;
+    padding: 1%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.citation{
+    border: none;
+}
+#myBtn, #myBtn1, #myBtn2{
+    display: none;
+}
+#myBtnR, #myBtn1R, #myBtn2R{
+    display: block;
+    color: white;
+    background: none;
+    border: none;
+    }
+    
+    #fr, #kr, #ch{
+        padding-left: 15%;
+        height: 500px;
+        justify-content: center;
+    }
+    
+
+}
