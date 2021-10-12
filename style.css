@@ -25,7 +25,7 @@ body{
 }
     /* size */
 .jv, #pp{
-    font-size: 100px;
+    font-size: 90px;
 }
 .couvrefeu, #myBtn, #myBtn1, #myBtn2, .citation, .txttransi{
     font-size:70px;
@@ -33,28 +33,29 @@ body{
 .close, .close1, .close2{
     font-size: 50px;
 }
-.pptitre, .readMe, .soit{
+.pptitre, .soit{
     font-size: 36px;
 }
-header, .liste{
-    font-size: 30px;
+header,.liste, .flippaysFR, .flipnumeroFR{   
+font-size: 30px;
 }
-#introUn, #introTrois, .pptexte{
+.readMe, #introUn, #introTrois, .pptexte{
+    line-height: 140%;
     font-size: 24px;
 }
-.footertitresource, .footertitrereseaux, .footerinfotitre{
+.footertitresource, .footertitrereseaux, .footerinfotitre, .flippaysKR, .flipnumeroKR, .flippaysCH, .flipnumeroCH {
     font-size: 18px;
 }
-.boutoncategorie.CategorieListe, .CategorieListe a , .titreleg{
+.boutoncategorie.CategorieListe, .CategorieListe a , .titreleg, .texte{
     font-size: 14px;
 }
 
 /* --------------------------- */
 /* -------DISPLAY NONE------- */
 /* ------------------------- */
-        .flipreponsive, .imageheaderR, #myBtnR, #myBtn1R, #myBtn2R, .pp1R, .pp2R, .pp3R, .pp4R, .pp5R, .pp6R, .pptitreR, .pptexteR, .ppimageR, #conclusionR{
+.flipreponsive, .flipreponsiveR, .imageresponsiveR, .imageheaderR, .imageheaderR2, #myBtnR, #myBtn1R, #myBtn2R, .pp1R, .pp2R, .pp3R, .pp4R, .pp5R, .pp6R, .pptitreR, .pptexteR, .ppimageR, #conclusionR{
         display: none;
-        }
+}
         
 
 /* --------------------------- */
@@ -139,10 +140,27 @@ header, .liste{
     height: 600px;
 }
     /* JEUX VIDEOS */
-.jv{
-    position: sticky;  
-    top: 1em; 
+
+.wrapper {
+    height: 100%;
+} 
+
+.typing{
+    position: sticky;
+    top: 1em;
+    width: 100%;
+    animation: typing 2s steps(22), .5s step-end alternate;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
 }
+
+
     /* IMAGE */
 .imageheader{
     padding: 5%;
@@ -168,13 +186,13 @@ header, .liste{
     padding-top: 20%;
 }
 .introA, .introB{
-    text-align: center;
+    text-align: left;
 }
 #introTrois{
     padding-bottom: 20%;
 }
 #introUn, #introTrois{
-    font-size: 24px;
+    font-weight: 300;
 }
 #introDeux{
     padding: 5%;
@@ -185,6 +203,45 @@ header, .liste{
 /* ------------FLIP---------- */
 /* ------------------------- */
 
+.flippaysFR, .flipnumeroFR, .flippaysKR, .flipnumeroKR, .flippaysCH, .flipnumeroCH{
+    text-align: center;
+    position: relative;
+    right: 10px;
+}
+.flippaysFR{
+    top: 218px;
+}
+
+.flipnumeroFR{
+    top: 225px;
+}
+.flippaysKR{ 
+    top: 243px;
+}
+
+.flipnumeroKR{
+    top: 260px;
+}
+
+.flippaysCH{ 
+    top: 310px;
+}
+.flippaysCH, .flipnumeroCH{
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+-webkit-text-stroke:1px rgba(0, 0, 0, 0.2);
+}
+.flipnumeroCH{  
+    top: 335px;
+}
+.flip-box-back{
+    background: url(images/flip/LOGIN-SCREEN\ DOFUS\ 2.png) no-repeat;
+}
+.flip-box-back1{
+    background: url(images/flip/LOGIN-SCREEN\ LOL\ 2.png) no-repeat;
+}
+.flip-box-back2{
+    background: url(images/flip/LOGIN-SCREEN\ OVER\ 2.png) no-repeat;
+}
 .flip-box{
     width: 50%;
     height: 446px;
@@ -202,14 +259,14 @@ header, .liste{
     transform: rotateY(180deg);
 }
   
-.flip-box-front, .flip-box-back {
+.flip-box-front, .flip-box-back, .flip-box-back1, .flip-box-back2 {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
   
-.flip-box-back {
+.flip-box-back, .flip-box-back1, .flip-box-back2{
     transform: rotateY(180deg);
 }
 
@@ -219,7 +276,7 @@ header, .liste{
 
 #fr, #kr, #ch{
     padding-left: 10%;
-    height: 846px;
+    height: 650px;
     justify-content: center;
 }
 
@@ -242,11 +299,20 @@ header, .liste{
     align-items: center;
 
 }
-
+.readMe{
+    padding: 5%;
+    text-decoration: underline;
+}
 .texte{
+    line-height: 140%;
+    font-weight: 300;
     text-align: center;
     background: rgba(29,29,29, 0.7);
     width: 100%;
+}
+.soit{
+    justify-content: center;
+    text-align: center;
 }
 .modal, .modal1, .modal2{
     display: none;
@@ -349,13 +415,11 @@ header, .liste{
 
 
 /* --------------------------- */
-/* --------CONCLUSION-------- */
+/* ----------FOOTER---------- */
 /* ------------------------- */
 
 
 footer{
-    font-family: 'Roboto', sans-serif;
-    gap: 13%;
     padding: 150px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
@@ -383,8 +447,8 @@ footer{
     grid-area: f4;
 }
 .footerbas{
-
     width: 100%;
+    padding-top: 5%;
     grid-area: f5;
 }
 .footertitresource{
@@ -453,7 +517,7 @@ footer{
 
 .formulaire{
     justify-content: flex-end;
-    width: 100%;
+    width: 50%;
 }
 .footertitreformulaire{
     padding-right: 2%;
@@ -481,17 +545,23 @@ footer{
 
 @media(max-width:1322px){
 body{
-    margin: 10%;
-    font-family: 'Roboto', sans-serif;
-}
-.jv, #pp{
-    font-size: 60px;
+    margin: 15%;
 }
 
-.couvrefeu, #myBtn, #myBtn1, #myBtn2,  .txttransi{
+.headerToggleButton span{
+    width: 40px;
+    height: 10px;
+ }
+
+.jv, #pp, #myBtn, #myBtn1, #myBtn2, .txttransi{
     font-size:50px;
 }
-.citation{
+
+.couvrefeu{
+    font-size: 40px;
+}
+
+.citation, .pptitre, .pptexte{
     font-size: 30px;
 }
 
@@ -501,7 +571,9 @@ body{
 .texte{
     font-size: 15px;
 }
-
+.footertitresource, .footertitrereseaux, .footerinfotitre{
+    font-size: 10px;
+}
 .flip-box{  
     display: none;
 }
@@ -543,7 +615,19 @@ body{
     height: 500px;
     justify-content: center;
 }
+
+footer{
+    padding: 30px;
 }
+.formulaire{
+    justify-content: flex-end;
+    width: 50%;
+}
+
+}
+/* --------------------------- */
+/* -----RESPONSIVE LVL2------ */
+/* ------------------------- */
 @media(max-width:907px){
 .jv, #pp{
     font-size: 30px;
@@ -558,20 +642,73 @@ body{
 .imageheader, #conclusion, .pp1, .pp2, .pp3, .pp4, .pp5, .pp6, .pptitre, .pptexte, .ppimage{
     display: none;
 }
+
 .imageheaderR, #conclusionR, .pp1R, .pp2R, .pp3R, .pp4R, .pp5R, .pp6R, .pptitreR, .pptexteR, .ppimageR{
     display: block;
 }
-.pptitreR{
-    padding-left: 20%;
+
+
+#ppR{
+    margin-top: 35%;
+    padding: 15%;
+    text-align: center;
+}
+.pp1R,.pp2R ,.pp3R ,.pp4R ,.pp5R ,.pp6R{
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+}
+
+.pptitreR, .pptexteR{
+    padding: 2%;
+    text-align: center;
+    justify-content: center;
 }
 .ppimageR{
-    padding-right: 30%;
-    padding-left: 30%;
+    justify-content: center;
+    padding-left: 40%;
+}
 
 }
-.pp1R, .pp2R, .pp3R, .pp4R, .pp5R, .pp6R{
-    padding-bottom: 10%;
-    padding-left: 40%;
-    padding-right: 20%;
+
+/* --------------------------- */
+/* -----RESPONSIVE LVL3------ */
+/* ------------------------- */
+@media(max-width:600px){
+
+.imageheaderR, .flipreponsive, .imageresponsive{
+    display: none;
+}
+
+.imageheaderR2, .flipreponsiveR, .imageresponsiveR{
+    display: block;
+}
+.couvrefeu{
+    font-size: 20px;
+}
+.imageresponsiveR{
+    padding-left: 22%;
+}
+.texte{
+    font-size: 9px;
+}
+#ppR{
+    margin-top: 35%;
+    padding: 15%;
+    text-align: center;
+}
+.pp1R,.pp2R ,.pp3R ,.pp4R ,.pp5R ,.pp6R{
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+}
+
+.pptitreR, .pptexteR{
+    padding: 2%;
+    text-align: center;
+    justify-content: center;
+}
+.ppimageR{
+    padding-left: 30%;
 }
 }
