@@ -49,9 +49,11 @@ header, .liste{
     font-size: 14px;
 }
 
-        /* DISPLAY NONE POUR RESPONSIVE*/
-        .flipreponsive, #myBtnR, #myBtn1R, #myBtn2R{
-            display: none;
+/* --------------------------- */
+/* -------DISPLAY NONE------- */
+/* ------------------------- */
+        .flipreponsive, .imageheaderR, #myBtnR, #myBtn1R, #myBtn2R, .pp1R, .pp2R, .pp3R, .pp4R, .pp5R, .pp6R, .pptitreR, .pptexteR, .ppimageR, #conclusionR{
+        display: none;
         }
         
 
@@ -478,8 +480,9 @@ footer{
 
 
 @media(max-width:1322px){
-*{
-    margin: 0;
+body{
+    margin: 10%;
+    font-family: 'Roboto', sans-serif;
 }
 .jv, #pp{
     font-size: 60px;
@@ -489,14 +492,14 @@ footer{
     font-size:50px;
 }
 .citation{
-    font-size: 35px;
-}
-.pptitre{
     font-size: 30px;
 }
 
-.pptexte, .readMe{
+.readMe,.pptitreR, .pptexteR{
     font-size: 20px;
+}
+.texte{
+    font-size: 15px;
 }
 
 .flip-box{  
@@ -529,11 +532,46 @@ footer{
     border: none;
     }
     
-    #fr, #kr, #ch{
-        padding-left: 15%;
-        height: 500px;
-        justify-content: center;
-    }
-    
+.modal-content, .modal-content1, .modal-content2 {
+    margin: 9%;
+    padding: 5%;
+    height: 100%;
+    width: 80%; 
+}
+#fr, #kr, #ch{
+    padding-left: 15%;
+    height: 500px;
+    justify-content: center;
+}
+}
+@media(max-width:907px){
+.jv, #pp{
+    font-size: 30px;
+}
+.couvrefeu, #myBtn, #myBtn1, #myBtn2,  .txttransi{
+    font-size:25px;
+}
+.texte{
+    font-size: 10px;
+}
 
+.imageheader, #conclusion, .pp1, .pp2, .pp3, .pp4, .pp5, .pp6, .pptitre, .pptexte, .ppimage{
+    display: none;
+}
+.imageheaderR, #conclusionR, .pp1R, .pp2R, .pp3R, .pp4R, .pp5R, .pp6R, .pptitreR, .pptexteR, .ppimageR{
+    display: block;
+}
+.pptitreR{
+    padding-left: 20%;
+}
+.ppimageR{
+    padding-right: 30%;
+    padding-left: 30%;
+
+}
+.pp1R, .pp2R, .pp3R, .pp4R, .pp5R, .pp6R{
+    padding-bottom: 10%;
+    padding-left: 40%;
+    padding-right: 20%;
+}
 }
