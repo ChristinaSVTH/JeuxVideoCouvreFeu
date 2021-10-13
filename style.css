@@ -522,9 +522,12 @@ footer{
     padding-right: 2%;
 }
 .formulaire input{
-    border-bottom: white 2px solid;
+    padding-right: 10%;
     background: none;
-    text-decoration: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: white 1px solid;
     width: 134px;
     height: 18px;
 }
@@ -534,11 +537,9 @@ footer{
 
 }
 .formulaire button{
-    border-bottom: yellow ;
-    border-top: black 1px solid;
-    border-right: black 1px solid;
-    border-left: black 1px solid;
-    background: none;
+    margin:5%;
+    border: none;
+    background: whitesmoke;
     height: 18px;
     width: 58px;
 }
@@ -891,6 +892,7 @@ font-size: 20px;
     display: block;
     color: white;
     background: none;
-    border: transparent 1px solid;
+    outline: none;
+    border: blue 1px solid;
 }
 }
