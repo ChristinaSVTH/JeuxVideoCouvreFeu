@@ -644,7 +644,7 @@ body{
     color: white;
     background: none;
     border: none;
-    }
+}
     
 .modal-content, .modal-content1, .modal-content2 {
     margin: 9%;
@@ -732,7 +732,7 @@ footer{
 .imageresponsiveR{
     padding-left: 22%;
 }
-.texte{
+.texte, .flippaysFRR2, .flipnumeroFRR2, .flippaysKRR2, .flipnumeroKRR2, .flippaysCHR2, .flipnumeroCHR2{
     font-size: 9px;
 }
 #ppR{
@@ -783,11 +783,11 @@ font-size: 20px;
     font-size: 6px;
 }
 
-.imageheaderR2{
+.imageheaderR2, .flipreponsive, .DofusHeaderR, .LOLHeaderR, .OverHeaderR, .flippaysFRR, .flippaysKRR, .flippaysCHR, .flipnumeroFRR, .flipnumeroKRR, .flipnumeroCHR{
     display: none;
 }
 
-.imageheaderR3{
+.imageheaderR3, .texteresponsiveR2, .flipreponsiveR, .DofusHeaderR2, .LOLHeaderR2, .OverHeaderR2, .flippaysFRR2, .flippaysKRR2, .flippaysCHR2, .flipnumeroFRR2, .flipnumeroKRR2, .flipnumeroCHR2{
     display: block;
 }
 
@@ -798,13 +798,47 @@ font-size: 20px;
     margin: 15%;
 }
 
-.flip-box-back{
-    background: url(images/flip/LOGIN-SCREEN\ DOFUS\ 2R.png) no-repeat;
+.DofusHeaderR2, .LOLHeaderR2, .OverHeaderR2{
+    height: 100%;
+    width: 100%;
 }
-.flip-box-back1{
-    background: url(images/flip/LOGIN-SCREEN\ LOL\ 2R.png) no-repeat;
+.DofusHeaderR2{
+    background: url(images/flip/LOGIN-SCREEN\ DOFUS\ 2R.png) no-repeat center;
 }
-.flip-box-back2{
-    background: url(images/flip/LOGIN-SCREEN\ OVER\ 2R.png) no-repeat;
+.flippaysFRR2, .flipnumeroFRR2, .flippaysKRR2, .flipnumeroKRR2, .flippaysCHR2, .flipnumeroCHR2{
+    height: 130px;
+    position: relative;
+    text-align: center;
 }
+.flippaysFRR2{
+    top: 130px;
+}
+.flipnumeroFRR2{
+    top: 20px;
+}
+
+.LOLHeaderR2{
+    background: url(images/flip/LOGIN-SCREEN\ LOL\ 2R.png) no-repeat center;
+}
+
+.flippaysKRR2{
+    top: 139px;
+}
+.flipnumeroKRR2{
+    top: 28px;
+}
+.OverHeaderR2{
+    background: url(images/flip/LOGIN-SCREEN\ OVER\ 2R.png) no-repeat center;
+}
+.flippaysCHR2{
+    top: 170px;
+}
+.flipnumeroCHR2{
+    top: 62px;
+}
+.flippaysCHR2, .flipnumeroCHR2{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke:1px rgba(0, 0, 0, 0.2);
+}
+
 }
