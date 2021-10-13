@@ -53,7 +53,7 @@ font-size: 30px;
 /* --------------------------- */
 /* -------DISPLAY NONE------- */
 /* ------------------------- */
-.flipreponsive, .imageheaderR, .imageheaderR2, #myBtnR, #myBtn1R, #myBtn2R, .pp1R, .pp2R, .pp3R, .pp4R, .pp5R, .pp6R, .pptitreR, .pptexteR, .ppimageR, #conclusionR{
+.flipreponsive, .imageheaderR, .imageheaderR2, #myBtnR, #myBtn1R, #myBtn2R, .pp1R, .pp2R, .pp3R, .pp4R, .pp5R, .pp6R, .pptitreR, .pptexteR, .ppimageR, #conclusionR, .imageheaderR3, .flipreponsiveR, .texteresponsiveR2, .flipreponsiveR, .DofusHeaderR2, .LOLHeaderR2, .OverHeaderR2, .flippaysFRR2, .flippaysKRR2, .flippaysCHR2, .flipnumeroFRR2, .flipnumeroKRR2, .flipnumeroCHR2{
         display: none;
 }
         
@@ -198,7 +198,10 @@ font-size: 30px;
     padding: 5%;
     justify-content: center;
 }
-
+.soit{
+    justify-content: center;
+    text-align: center;
+}
 /* --------------------------- */
 /* ------------FLIP---------- */
 /* ------------------------- */
@@ -311,10 +314,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: rgba(29,29,29, 0.7);
     width: 100%;
 }
-.soit{
-    justify-content: center;
-    text-align: center;
-}
+
 .modal, .modal1, .modal2{
     display: none;
     position: fixed; 
@@ -570,7 +570,7 @@ body{
     font-size: 20px;
 }
 .texte{
-    font-size: 15px;
+    font-size: 12px;
 }
 .footertitresource, .footertitrereseaux, .footerinfotitre{
     font-size: 10px;
@@ -588,6 +588,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.modal-content, .modal-content1, .modal-content2 {
+    margin: 9%;
+    padding: 1%;
+    width: 80%; 
 }
 .DofusHeaderR, .LOLHeaderR, .OverHeaderR{
     height: 100%;
@@ -747,5 +753,58 @@ footer{
 }
 .ppimageR{
     padding-left: 30%;
+}
+
+/* --------------------------- */
+/* -----RESPONSIVE LVL3------ */
+/* ------------------------- */
+
+}
+
+@media(max-width:465px){
+
+body{
+    margin: 10%;
+}
+
+.jv, #pp, .couvrefeu, #myBtn, #myBtn1, #myBtn2, .citation, .readMe, .txttransi{
+    font-size: 15px;
+}
+
+header,.liste, .flippaysFR, .flipnumeroFR, .introA, .introB{   
+font-size: 20px;
+}
+
+.footertitre, .flippaysKR, .flipnumeroKR, .flippaysCH, .flipnumeroCH {
+    font-size: 10px;
+}
+
+.footertitresource, .footertitrereseaux, .footerinfotitre, .titreleg{
+    font-size: 6px;
+}
+
+.imageheaderR2{
+    display: none;
+}
+
+.imageheaderR3{
+    display: block;
+}
+
+.titre{
+    height: 400px;
+}
+#introUn, #introTrois{
+    margin: 15%;
+}
+
+.flip-box-back{
+    background: url(images/flip/LOGIN-SCREEN\ DOFUS\ 2R.png) no-repeat;
+}
+.flip-box-back1{
+    background: url(images/flip/LOGIN-SCREEN\ LOL\ 2R.png) no-repeat;
+}
+.flip-box-back2{
+    background: url(images/flip/LOGIN-SCREEN\ OVER\ 2R.png) no-repeat;
 }
 }
