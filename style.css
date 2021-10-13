@@ -793,7 +793,6 @@ font-size: 20px;
     display: block;
 }
 .titre{
-    border: springgreen solid 2px;
     height: 250px;
     padding-top: 25%;
     padding-left: 18%;
@@ -851,7 +850,11 @@ font-size: 20px;
     color: #1d1d1d;
 }
 
- .headerToggleButton span{
+#fr, #kr, #ch{
+    height: 400px;
+}
+
+.headerToggleButton span{
     width: 25px;
     height: 10px;
 }
