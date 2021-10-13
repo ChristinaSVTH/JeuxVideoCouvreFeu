@@ -43,10 +43,10 @@ font-size: 30px;
     line-height: 140%;
     font-size: 24px;
 }
-.footertitresource, .footertitrereseaux, .footerinfotitre, .flippaysKR, .flipnumeroKR, .flippaysCH, .flipnumeroCH {
+.footertitresource, .footertitrereseaux, .footerinfotitre, .flippaysKR, .flipnumeroKR, .flippaysCH, .flipnumeroCH, .texte {
     font-size: 18px;
 }
-.boutoncategorie.CategorieListe, .CategorieListe a , .titreleg, .texte{
+.boutoncategorie.CategorieListe, .CategorieListe a , .titreleg{
     font-size: 14px;
 }
 
@@ -206,7 +206,7 @@ font-size: 30px;
 .flippaysFR, .flipnumeroFR, .flippaysKR, .flipnumeroKR, .flippaysCH, .flipnumeroCH{
     text-align: center;
     position: relative;
-    right: 45px;
+    right: 35px;
 }
 .flippaysFR{
     top: 218px;
@@ -327,7 +327,7 @@ font-size: 30px;
 .modal-content, .modal-content1, .modal-content2 {
     margin: 9%;
     padding: 5%;
-    height: 90%;
+    height: auto;
     width: 80%; 
 }
 .modal-content{
@@ -572,12 +572,12 @@ body{
     font-size: 30px;
 }
 
-.readMe,.pptitreR, .pptexteR, .flippaysFRR, .flipnumeroFRR, .flippaysKRR, .flipnumeroKRR, .flippaysCHR, .flipnumeroCHR{
+.readMe,.pptitreR, .pptexteR, .flippaysFRR, .flipnumeroFRR, .flippaysKRR, .flipnumeroKRR, .flippaysCHR, .flipnumeroCHR, .texte{
     font-size: 20px;
 }
-.texte{
+/* {
     font-size: 12px;
-}
+} */
 .footertitresource, .footertitrereseaux, .footerinfotitre{
     font-size: 10px;
 }
@@ -654,7 +654,7 @@ body{
 .modal-content, .modal-content1, .modal-content2 {
     margin: 9%;
     padding: 5%;
-    height: 100%;
+    height: auto;
     width: 80%; 
 }
 #fr, #kr, #ch{
@@ -767,7 +767,7 @@ footer{
     justify-content: center;
 }
 .ppimageR{
-    padding-left: 30%;
+    padding-left: 25%;
 }
 
 #myBtnR, #myBtn1R, #myBtn2R{
@@ -788,22 +788,21 @@ footer{
 body{
     margin: 10%;
 }
+header,.liste{   
+font-size: 20px;
+}
 
 .jv, #pp, .couvrefeu, #myBtn, #myBtn1, #myBtn2, .citation, .readMe, .txttransi{
     font-size: 15px;
 }
 
-header,.liste{   
-font-size: 20px;
-}
-
-.soit, .flippaysFRR2, .flipnumeroFRR2, .flippaysKRR2, .flipnumeroKRR2, .flippaysCHR2, .flipnumeroCHR2{
+.soit, .flippaysFRR2, .flipnumeroFRR2, .flippaysKRR2, .flipnumeroKRR2, .flippaysCHR2, .flipnumeroCHR2, .pptexteR, .pptitreR{
     font-size: 13px;
 }
 .footertitre{
     font-size: 10px;
 }
-.footertitresource, .footertitrereseaux, .footerinfotitre, .titreleg{
+.footertitresource, .footertitrereseaux, .footerinfotitre, .titreleg, .footertitreformulaire{
     font-size: 9px;
 }
 
@@ -814,6 +813,13 @@ font-size: 20px;
 .imageheaderR3, .texteresponsiveR2, .flipreponsiveR, .DofusHeaderR2, .LOLHeaderR2, .OverHeaderR2, .flippaysFRR2, .flippaysKRR2, .flippaysCHR2, .flipnumeroFRR2, .flipnumeroKRR2, .flipnumeroCHR2{
     display: block;
 }
+
+#headerhamburger{
+    position: fixed;
+    width: 170px;
+    height: 50%;
+}
+
 .titre{
     height: 250px;
     padding-top: 25%;
@@ -880,11 +886,15 @@ font-size: 20px;
     width: 25px;
     height: 10px;
 }
-
-#headerhamburger{
-    position: fixed;
-    width: 170px;
-    height: 50%;
+.formulaire input{
+    padding-right: 10%;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: white 1px solid;
+    width: 100px;
+    height: 18px;
 }
 
 #myBtnR, #myBtn1R, #myBtn2R{
