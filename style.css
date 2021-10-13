@@ -230,8 +230,7 @@ font-size: 30px;
     top: 310px;
 }
 .flippaysCH, .flipnumeroCH{
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
--webkit-text-stroke:1px rgba(0, 0, 0, 0.2);
+    color: #1d1d1d;
 }
 .flipnumeroCH{  
     top: 335px;
@@ -627,11 +626,10 @@ body{
     top: 335px;
 }
 .flipnumeroCHR{
-    top: 357px;
+    top: 358px;
 }
 .flippaysCHR, .flipnumeroCHR{
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke:1px rgba(0, 0, 0, 0.2);
+    color: #1d1d1d;
 }
 .citation{
     border: none;
@@ -771,16 +769,18 @@ body{
     font-size: 15px;
 }
 
-header,.liste, .flippaysFR, .flipnumeroFR, .introA, .introB{   
+header,.liste{   
 font-size: 20px;
 }
 
-.footertitre, .flippaysKR, .flipnumeroKR, .flippaysCH, .flipnumeroCH {
+.flippaysFRR2, .flipnumeroFRR2, .flippaysKRR2, .flipnumeroKRR2, .flippaysCHR2, .flipnumeroCHR2{
+    font-size: 13px;
+}
+.footertitre{
     font-size: 10px;
 }
-
 .footertitresource, .footertitrereseaux, .footerinfotitre, .titreleg{
-    font-size: 6px;
+    font-size: 9px;
 }
 
 .imageheaderR2, .flipreponsive, .DofusHeaderR, .LOLHeaderR, .OverHeaderR, .flippaysFRR, .flippaysKRR, .flippaysCHR, .flipnumeroFRR, .flipnumeroKRR, .flipnumeroCHR{
@@ -795,7 +795,7 @@ font-size: 20px;
     height: 400px;
 }
 #introUn, #introTrois{
-    margin: 15%;
+    margin: 25%;
 }
 
 .DofusHeaderR2, .LOLHeaderR2, .OverHeaderR2{
@@ -806,15 +806,15 @@ font-size: 20px;
     background: url(images/flip/LOGIN-SCREEN\ DOFUS\ 2R.png) no-repeat center;
 }
 .flippaysFRR2, .flipnumeroFRR2, .flippaysKRR2, .flipnumeroKRR2, .flippaysCHR2, .flipnumeroCHR2{
-    height: 130px;
+    height: 150px;
     position: relative;
     text-align: center;
 }
 .flippaysFRR2{
-    top: 130px;
+    top: 150px;
 }
 .flipnumeroFRR2{
-    top: 20px;
+    top: 28px;
 }
 
 .LOLHeaderR2{
@@ -822,19 +822,19 @@ font-size: 20px;
 }
 
 .flippaysKRR2{
-    top: 139px;
+    top: 162px;
 }
 .flipnumeroKRR2{
-    top: 28px;
+    top: 36px;
 }
 .OverHeaderR2{
     background: url(images/flip/LOGIN-SCREEN\ OVER\ 2R.png) no-repeat center;
 }
 .flippaysCHR2{
-    top: 170px;
+    top: 204px;
 }
 .flipnumeroCHR2{
-    top: 63px;
+    top: 84px;
 }
 .flippaysCHR2, .flipnumeroCHR2{
     color: #1d1d1d;
