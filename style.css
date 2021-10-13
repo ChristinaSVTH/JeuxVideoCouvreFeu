@@ -834,11 +834,10 @@ font-size: 20px;
     top: 170px;
 }
 .flipnumeroCHR2{
-    top: 62px;
+    top: 63px;
 }
 .flippaysCHR2, .flipnumeroCHR2{
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke:1px rgba(0, 0, 0, 0.2);
+    color: #1d1d1d;
 }
 
 }
