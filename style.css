@@ -89,7 +89,6 @@ font-size: 30px;
    width: 60px;
    height: 10px;
    background: rgb(236, 236, 236);
-   
    display: block;
    margin-top: 4px;
    transition: .5s ease;
@@ -793,9 +792,15 @@ font-size: 20px;
 .imageheaderR3, .texteresponsiveR2, .flipreponsiveR, .DofusHeaderR2, .LOLHeaderR2, .OverHeaderR2, .flippaysFRR2, .flippaysKRR2, .flippaysCHR2, .flipnumeroFRR2, .flipnumeroKRR2, .flipnumeroCHR2{
     display: block;
 }
-
 .titre{
-    height: 400px;
+    border: springgreen solid 2px;
+    height: 250px;
+    padding-top: 25%;
+    padding-left: 18%;
+}
+
+.modal-content, .modal-content1, .modal-content2 {
+    height: auto;
 }
 #introUn, #introTrois{
     font-size: 12px;
@@ -846,4 +851,14 @@ font-size: 20px;
     color: #1d1d1d;
 }
 
+ .headerToggleButton span{
+    width: 25px;
+    height: 10px;
+}
+
+#headerhamburger{
+    position: fixed;
+    width: 170px;
+    height: 50%;
+}
 }
