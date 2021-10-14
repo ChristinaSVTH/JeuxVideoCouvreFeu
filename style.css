@@ -439,7 +439,7 @@ footer{
     grid-area: f3;
 }
 .footericone{
-    padding-left: 30%;
+    padding-left: 40%;
 }
 .infoleg{
     grid-area: f4;
@@ -741,6 +741,9 @@ footer{
 .couvrefeu{
     font-size: 20px;
 }
+.pptitreR, .pptexteR{
+    font-size: 18px;
+}
 .texte{
     font-size: 10px;
 }
@@ -767,7 +770,7 @@ footer{
     justify-content: center;
 }
 .ppimageR{
-    padding-left: 25%;
+    padding-left: 32%;
 }
 
 #myBtnR, #myBtn1R, #myBtn2R{
