@@ -511,39 +511,6 @@ footer{
     color: white;
 }
 
-/* Formulaire */
-
-.formulaire{
-    justify-content: flex-end;
-    width: 50%;
-}
-.footertitreformulaire{
-    padding-right: 2%;
-}
-.formulaire input{
-    padding-right: 10%;
-    background: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: white 1px solid;
-    width: 134px;
-    height: 18px;
-}
-::placeholder{
-    font-size: 13px;
-    padding-left: 40%;
-
-}
-.formulaire button{
-    margin:5%;
-    border: none;
-    background: whitesmoke;
-    height: 18px;
-    width: 58px;
-}
-
-
 
 /* --------------------------- */
 /* -----RESPONSIVE LVL1------ */
@@ -666,10 +633,6 @@ body{
 
 footer{
     padding: 30px;
-}
-.formulaire{
-    justify-content: flex-end;
-    width: 50%;
 }
 
 }
@@ -810,7 +773,7 @@ font-size: 20px;
 .footertitre{
     font-size: 10px;
 }
-.footertitresource, .footertitrereseaux, .footerinfotitre, .titreleg, .footertitreformulaire{
+.footertitresource, .footertitrereseaux, .footerinfotitre, .titreleg{
     font-size: 9px;
 }
 
@@ -893,16 +856,6 @@ font-size: 20px;
 .headerToggleButton span{
     width: 25px;
     height: 10px;
-}
-.formulaire input{
-    padding-right: 10%;
-    background: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: white 1px solid;
-    width: 100px;
-    height: 18px;
 }
 
 #myBtnR, #myBtn1R, #myBtn2R{
