@@ -33,7 +33,7 @@ body{
 .close, .close1, .close2{
     font-size: 50px;
 }
-.pptitre, .soit{
+.pptitre{
     font-size: 36px;
 }
 header,.liste, .flippaysFR, .flipnumeroFR{   
@@ -195,10 +195,7 @@ font-size: 30px;
     padding: 5%;
     justify-content: center;
 }
-.soit{
-    justify-content: center;
-    text-align: center;
-}
+
 /* --------------------------- */
 /* ------------FLIP---------- */
 /* ------------------------- */
@@ -295,6 +292,7 @@ font-size: 30px;
 }
 .citation{
     font-style: italic;
+    font-weight: 300;
     padding-right: 15%;
     border-right: white 2px solid;
     justify-content: center;
@@ -309,7 +307,7 @@ font-size: 30px;
 .texte{
     line-height: 140%;
     font-weight: 300;
-    text-align: center;
+    text-align: left;
     background: rgba(29,29,29, 0.7);
     width: 100%;
 }
@@ -806,7 +804,7 @@ font-size: 20px;
     font-size: 15px;
 }
 
-.soit, .flippaysFRR2, .flipnumeroFRR2, .flippaysKRR2, .flipnumeroKRR2, .flippaysCHR2, .flipnumeroCHR2, .pptexteR, .pptitreR{
+.flippaysFRR2, .flipnumeroFRR2, .flippaysKRR2, .flipnumeroKRR2, .flippaysCHR2, .flipnumeroCHR2, .pptexteR, .pptitreR{
     font-size: 13px;
 }
 .footertitre{
