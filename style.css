@@ -294,6 +294,7 @@ font-size: 30px;
     width: 100%;
 }
 .citation{
+    padding-right: 15%;
     border-right: white 2px solid;
     font-style:italic;
     justify-content: center;
@@ -575,11 +576,12 @@ body{
 .readMe,.pptitreR, .pptexteR, .flippaysFRR, .flipnumeroFRR, .flippaysKRR, .flipnumeroKRR, .flippaysCHR, .flipnumeroCHR, .texte{
     font-size: 20px;
 }
-/* {
-    font-size: 12px;
-} */
+
 .footertitresource, .footertitrereseaux, .footerinfotitre{
     font-size: 10px;
+}
+.titreleg{
+    font-size: 9px;
 }
 .flip-box{  
     display: none;
@@ -648,7 +650,7 @@ body{
     display: block;
     color: white;
     background: none;
-    border: transparent 1px solid;
+    border: none;
 }
     
 .modal-content, .modal-content1, .modal-content2 {
@@ -722,7 +724,7 @@ footer{
     display: block;
     color: white;
     background: none;
-    border: transparent 1px solid;
+    border: none;
 }
 }
 
@@ -771,6 +773,10 @@ footer{
 }
 .ppimageR{
     padding-left: 32%;
+}
+.footertitresource{
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 #myBtnR, #myBtn1R, #myBtn2R{
